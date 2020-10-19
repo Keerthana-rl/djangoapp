@@ -1,0 +1,99 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+ <center>
+<form action="" method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td>S.I</td>
+                <td>Roll No</td>
+                <td>Student Name</td>
+                <td>Attendance</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    123
+                    <input type="hidden" name="roll_no[]" value="123" />
+                </td>
+                <td>
+                    Raj Shekhar
+                    <input type="hidden" name="student_name[]" value="Raj Shekhar" />
+                </td>
+            <td> 90%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    231
+                    <input type="hidden" name="roll_no[]" value="231" />
+                </td>
+                <td>
+                    Pankaj Kumar
+                    <input type="hidden" name="student_name[]" value="Pankaj Kumar" />
+                </td>
+               <td> 90%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    345
+                    <input type="hidden" name="roll_no[]" value="345" />
+                </td>
+                <td>
+                    Amit Singh
+                    <input type="hidden" name="student_name[]" value="Amit Singh" />
+                </td>
+                <td> 90%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    456
+                    <input type="hidden" name="roll_no[]" value="456" />
+                </td>
+                <td>
+                    Arjun Kumar
+                    <input type="hidden" name="student_name[]" value="Arjun Kumar" />
+                </td>
+                <td> 90%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    567
+                    <input type="hidden" name="roll_no[]" value="567" />
+                </td>
+                <td>
+                    Amit Kumar
+                    <input type="hidden" name="student_name[]" value="Amit Kumar" />
+                </td>
+                <td> 90%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>
+                    789
+                    <input type="hidden" name="roll_no[]" value="789" />
+                </td>
+                <td>
+                    Suraj Tiwari
+                    <input type="hidden" name="student_name[]" value="Suraj Tiwari" />
+                </td>
+                 <td> 90%</td>
+            </tr>
+             
+        </tbody>
+    </table>
+     
+    <br/>
+  
+</form>
+  </center>
+{% endblock %}
